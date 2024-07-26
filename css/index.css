@@ -74,6 +74,14 @@ nav .links a.active{
     nav .logo {
         display: none;
     }
+    nav .links a{
+        font-size: 1rem;
+        margin: 0 3px 0 3px;
+    }
+
+    nav .links{
+        padding: 0 20px;
+    }
 }
 
 
@@ -219,9 +227,9 @@ nav .links a.active{
         margin-top: 15px;
         padding: 10px 15px;
         border-radius: 14px;
-        font-size: 13px;
+        font-size: 11px;
         font-family: "inter" ,sans-serif;
-        width: 50%;
+        width: 52%;
         margin: auto;
     }
 
@@ -429,10 +437,10 @@ nav .links a.active{
     .workp{
         flex: 1;
     background: #19191d;
-    padding: 60px 15px;
+    padding: 60px 15px ;
     border: 1px solid #373A40 ;
     border-radius: 15px;
-    height: 800px;
+    height: 700px;
     margin-top: 20px;
     }
 
@@ -455,6 +463,7 @@ nav .links a.active{
         flex-direction: column;
         gap: 36px;
         color: #bdbdbd;
+        font-size: 10px;
     }
 
     .workp .work-list .item{
@@ -465,22 +474,22 @@ nav .links a.active{
 
     .workp .work-list .item .work-info h5{
         color: #fff;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
         transition:all 0.3s ease;
     }
 
     .workp .work-list .mystory h5{
-        padding-top: 100px;
+        padding-top: 25px;
         color: #eb8500;
-        font-size: 27px;
+        font-size: 23px;
         font-weight: 700;
         transition:all 0.3s ease;
         text-align: left;
     }
 
     .workp .work-list .mystory p{
-        margin-top: 20px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 36px;
@@ -488,7 +497,7 @@ nav .links a.active{
         letter-spacing: 0.5px;
         padding-right: 50px;
         display: grid;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .boxcontainer{
@@ -522,8 +531,9 @@ nav .links a.active{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 10px;
         gap: 20px;
-        padding: 20px;
+        padding: 10px;
         height: 260px;
         background: #19191d;
         border: 1px solid #373A40;
@@ -549,14 +559,14 @@ nav .links a.active{
     }
 
     .boxcontainer .box .item a{
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         color: #eb8500;
     }
     
     .boxcontainer .box .item p{
         color: #bdbdbd;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 23px;
     }
 }
@@ -618,13 +628,16 @@ body::-webkit-scrollbar {
   }
 
 
-@media(max-width:700px){
+@media(max-width:700px){ /*nreiysburblsndbcouwhefwfneulncuwgeucbwjebciwueijwbekc*/
 
     
     
 
     .slide{
-        margin-top: 5px;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        
     }
 
     img{
@@ -664,14 +677,14 @@ body::-webkit-scrollbar {
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~ .imgContainer #button4{
     width: 200px;
-    height: 300px;
+    height: 350px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider5:target ~ .imgContainer #img5,
 #slider5:target ~ .imgContainer #button5{
-    width: 230px;
+    width: 200px;
     height: 300px;
     background-color: transparent;
     filter: saturate(100%);
@@ -687,7 +700,7 @@ body::-webkit-scrollbar {
 
 #slider7:target ~ .imgContainer #img7,
 #slider7:target ~ .imgContainer #button7{
-    width: 250px;
+    width: 220px;
     height: 300px;
     background-color: transparent;
     filter: saturate(100%);
@@ -695,25 +708,32 @@ body::-webkit-scrollbar {
 
 
 #slider1:target ~ .imgContainer{
-    left: 130%;
+    left: 150%;
+    top: 20%
 }
 #slider2:target ~ .imgContainer{
-    left: 85%;
+    left: 110%;
+    top: 20%
 }
 #slider3:target ~ .imgContainer{
-    left: 45%;
+    left: 55%;
+    top: 20%
 }
 #slider4:target ~ .imgContainer{
     left: 0%;
+    top: 20%
 }
 #slider5:target ~ .imgContainer{
-    left: -45%;
+    left: -55%;
+    top: 20%
 }
 #slider6:target ~ .imgContainer{
-    left: -85%;
+    left: -110%;
+    top: 20%
 }
 #slider7:target ~ .imgContainer{
-    left: -130%;
+    left: -150%;
+    top: 20%
 }
     
 }
@@ -756,7 +776,7 @@ body::-webkit-scrollbar {
 
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~ .imgContainer #button4{
-    width: 300px;
+    width: 230px;
     height: 400px;
     background-color: transparent;
     filter: saturate(100%);
